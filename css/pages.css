@@ -51,5 +51,10 @@
 .cs-body figure img { width: 100%; border-radius: var(--radius); border: 1px solid var(--color-hairline); }
 .cs-body figcaption { color: var(--color-slate); font-size: var(--text-xs); margin-top: var(--space-2); text-align: center; }
 
+/* 3-up image grid inside a case study */
+.cs-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3); margin: var(--space-4) 0; }
+.cs-grid-3 img { width: 100%; border-radius: var(--radius); border: 1px solid var(--color-hairline); }
+@media (max-width: 640px) { .cs-grid-3 { grid-template-columns: 1fr; } }
+
 /* "Next project" nav at the bottom of a case study */
 .cs-next { max-width: var(--measure); margin: var(--space-7) auto; padding: var(--space-5) var(--space-4); border-top: 1px solid var(--color-hairline); text-align: center; }

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LinkedIn case study — evaluating and redesigning LinkedIn's job-application flow.">
+  <title>LinkedIn Case Study — Catherine Gu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="/COGSPortfolio/css/version-switcher.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a class="brand" href="index.html"><img src="images/catherinegu.png" alt="Catherine Gu" height="44"></a>
+    <ul class="nav-links">
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="AboutMe.html">About</a></li>
+      <li><a href="files/CatherineGuResume.pdf" target="_blank">Resume</a></li>
+    </ul>
+  </nav>
+
+  <!-- Case study hero -->
+  <header class="cs-hero">
+    <p class="eyebrow">UX Research · Redesign</p>
+    <h1>LinkedIn Case Study</h1>
+    <p class="lead">A dive into optimizing LinkedIn's job-application design to improve the user experience.</p>
+  </header>
+
+  <div class="cs-cover">
+    <img src="images/LinkedIn/LinkedIn-landing.png" alt="LinkedIn case study landing">
+  </div>
+
+  <!-- TL;DR -->
+  <dl class="cs-meta">
+    <div><dt>Project type</dt><dd>Class project</dd></div>
+    <div><dt>Role</dt><dd>Project Manager · UX/UI Designer</dd></div>
+    <div><dt>Duration</dt><dd>8 weeks</dd></div>
+    <div><dt>Team</dt><dd>Adam Lamin, Punit Munnangi, Mela Son</dd></div>
+  </dl>
+
+  <div class="cs-body">
+
+    <section>
+      <p class="kicker" style="color:var(--color-slate); text-transform:uppercase; letter-spacing:.06em; font-size:var(--text-xs)">Overview</p>
+      <h2>Project Context</h2>
+      <p>LinkedIn is a global leader in job networking and search services, backed by its exceptional
+        reputation; however, we believed we could further enhance LinkedIn's market value and customer
+        satisfaction by improving its job search and application process.</p>
+      <p>We engaged in two major processes to ensure we created a user-centric design that would truly
+        help LinkedIn succeed — starting with exploratory methods before the redesign, and then various
+        user testing to inform and test the redesign.</p>
+      <figure><img src="images/LinkedIn/LinkedIn-overview.png" alt="Overview of the process"></figure>
+    </section>
+
+    <section>
+      <p class="kicker" style="color:var(--color-slate); text-transform:uppercase; letter-spacing:.06em; font-size:var(--text-xs)">Evaluation Methods</p>
+      <h2>Cognitive Walkthrough: what do we think are the issues?</h2>
+      <p>We began our exploration by creating a task: <strong>"Find an internship or entry-level job and
+        apply through Easy Apply."</strong> We walked through this task as a new user would, and broke it
+        into 12 steps to analyze in detail. At each step we identified potential issues and ranked them by
+        severity to prioritize which to address first.</p>
+      <figure><img src="images/LinkedIn/CognitiveWalkthrough.png" alt="Cognitive walkthrough"></figure>
+      <h3>Competitive Analysis: what do other companies do?</h3>
+      <p>With the issues from the cognitive walkthrough in mind, we turned to LinkedIn's competitors to
+        assess LinkedIn's current effectiveness and propose ways to improve it.</p>
+      <figure><img src="images/LinkedIn/CompetitorSpectrum.png" alt="Competitor spectrum"></figure>
+    </section>
+
+    <section>
+      <p class="kicker" style="color:var(--color-slate); text-transform:uppercase; letter-spacing:.06em; font-size:var(--text-xs)">Problem Scope</p>
+      <h2>What problems should we tackle?</h2>
+      <p>From both the Cognitive Walkthrough and the Competitive Analysis, we identified and defined many
+        UI and feature recommendations to tackle in the redesign.</p>
+      <figure><img src="images/LinkedIn/Scope-UI.png" alt="UI scope"></figure>
+      <figure><img src="images/LinkedIn/Scope-New.png" alt="New feature scope"></figure>
+    </section>
+
+    <section>
+      <p class="kicker" style="color:var(--color-slate); text-transform:uppercase; letter-spacing:.06em; font-size:var(--text-xs)">Pre-design User Testing</p>
+      <h2>Card Sort: how should we organize the information architecture?</h2>
+      <p>In our cognitive walkthrough, we identified that features in the current information architecture
+        may be confusing. So we used OptimalWorkshop to conduct a hybrid card sort, letting users move
+        features into the categories they felt were appropriate.</p>
+      <figure><img src="images/LinkedIn/SimilarityMatrix.png" alt="Similarity matrix"></figure>
+      <p>Focusing specifically on the Jobs page features, we found the following:</p>
+      <figure><img src="images/LinkedIn/Jobs-IA.png" alt="Jobs information architecture"></figure>
+      <h3>Qualitative Test: are our hypotheses correct?</h3>
+      <p>How did we know the issues we identified were real problems users face? To test our hypothesized
+        issues and stay user-centric, we used UserTesting.com to create think-aloud tasks, then asked a
+        few qualitative questions about the experience.</p>
+      <figure><img src="images/LinkedIn/QualitativeQuotes.png" alt="Qualitative quotes"></figure>
+    </section>
+
+    <section>
+      <p class="kicker" style="color:var(--color-slate); text-transform:uppercase; letter-spacing:.06em; font-size:var(--text-xs)">Prototyping</p>
+      <h2>Redesign: what did we change?</h2>
+      <div class="cs-grid-3">
+        <img src="images/LinkedIn/JobsPage.png" alt="Jobs page redesign">
+        <img src="images/LinkedIn/JobListing.png" alt="Job listing redesign">
+        <img src="images/LinkedIn/EasyApply.png" alt="Easy Apply redesign">
+      </div>
+      <p>With our hypothesized issues confirmed by the qualitative test, Mela and I created our redesign to
+        incorporate the new features and information architecture. Below is a breakdown of the changes we
+        made on each page involved in the job-application process.</p>
+      <figure><img src="images/LinkedIn/Redesign-Home.png" alt="Redesigned home"></figure>
+      <figure><img src="images/LinkedIn/Redesign-Listing.png" alt="Redesigned listing"></figure>
+      <figure><img src="images/LinkedIn/Redesign-EasyApply.png" alt="Redesigned Easy Apply"></figure>
+      <figure><img src="images/LinkedIn/Redesign-Confirmation.png" alt="Redesigned confirmation"></figure>
+    </section>
+
+    <section>
+      <p class="kicker" style="color:var(--color-slate); text-transform:uppercase; letter-spacing:.06em; font-size:var(--text-xs)">Post-design User Testing</p>
+      <h2>Quantitative Test: did our changes have the effect we expected?</h2>
+      <p>After building a Figma mockup mimicking the existing LinkedIn flow and another for the new design,
+        we wanted to confirm the redesign was truly more intuitive. We used Maze and Google Forms to run
+        within-subject A/B tests with 29 participants — randomizing which version participants saw first,
+        gathering their opinions on each, and comparing them.</p>
+      <figure><img src="images/LinkedIn/QuantitativeResults.png" alt="Quantitative results"></figure>
+    </section>
+
+    <section>
+      <p class="kicker" style="color:var(--color-slate); text-transform:uppercase; letter-spacing:.06em; font-size:var(--text-xs)">Reflection</p>
+      <h2>What did I learn?</h2>
+      <p>Our team chose the ambitious task of improving such a well-established site, and it was a great
+        experience to work with a mature product rather than one that needed a lot of work. This project
+        let me dive deeper into the user-research side of UX and define our own goals as we moved through
+        the project. I also got to experiment with many research platforms — OptimalWorkshop,
+        UserTesting.com, and Maze. Thank you to my teammates for all your hard work and participation.</p>
+    </section>
+
+  </div>
+
+  <!-- Next project -->
+  <div class="cs-next">
+    <p class="kicker" style="color:var(--color-slate); text-transform:uppercase; letter-spacing:.06em; font-size:var(--text-xs)">Next project</p>
+    <p><a href="Kinoyume.html">Kinoyume Website Redesign →</a></p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="socials">
+      <a href="https://www.facebook.com/catherine.gu.37201" target="_blank" aria-label="Facebook" class="fa fa-facebook"></a>
+      <a href="https://www.instagram.com/catherine_gu_/" target="_blank" aria-label="Instagram" class="fa fa-instagram"></a>
+      <a href="https://www.linkedin.com/in/catherine-gu-3091ba25a/" target="_blank" aria-label="LinkedIn" class="fa fa-linkedin"></a>
+    </div>
+    <p>Copyright 2023 Catherine Gu</p>
+    <p class="version-switcher">
+      <label for="versionSelect">Viewing</label>
+      <select id="versionSelect" class="version-select" aria-label="Portfolio version"></select>
+    </p>
+  </footer>
+
+  <script src="/COGSPortfolio/js/versions.js"></script>
+  <script src="/COGSPortfolio/js/version-switcher.js"></script>
+</body>
+</html>
