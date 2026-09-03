@@ -1,88 +1,122 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Google Fonts -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Catherine Gu — UX designer & researcher blending cognitive science with design to make complex software genuinely usable.">
+  <title>Catherine Gu — UX Designer & Researcher</title>
+  <!-- Typefaces -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300&family=Quattrocento&family=Roboto&display=swap" rel="stylesheet">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <!-- link to style.css -->
-  <link rel="stylesheet" href="css/styles.css">
-  <!-- Version switcher styling (shared from the site root) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Design system -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <!-- Shared version switcher styling -->
   <link rel="stylesheet" href="/COGSPortfolio/css/version-switcher.css">
-  <!-- Font Awesome
-  <script src="https://kit.fontawesome.com/86badc98c7.js" crossorigin="anonymous"></script> -->
-
- <!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- Favicon-->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
-  <title>Catherine Gu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
-
 <body>
 
-  <!-- Nav Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="index.html"><img src="images/catherinegu.png" alt="logo" height="50"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav ml-auto">
-        <li class="navbar-item">
-          <a href="files\CatherineGuResume.pdf" class="nav-link" target="_blank">Resume</a>
-        </li>
-        <li class="navbar-item">
-          <a href="AboutMe.html" class="nav-link">About Me</a>
-        </li>
-      </ul>
-    </div>
+  <!-- Nav -->
+  <nav class="site-nav">
+    <a class="brand" href="index.html"><img src="images/catherinegu.png" alt="Catherine Gu" height="44"></a>
+    <ul class="nav-links">
+      <li><a href="#work">Work</a></li>
+      <li><a href="AboutMe.html">About</a></li>
+      <li><a href="files/CatherineGuResume.pdf" target="_blank">Resume</a></li>
+    </ul>
   </nav>
 
-  <!-- ============================================= -->
-  <!--  v2.0 WORKSPACE — start building here         -->
-  <!-- ============================================= -->
-  <main id="v2-content">
-    <!-- Your new portfolio design goes here. -->
-  </main>
+  <!-- Hero -->
+  <header class="hero">
+    <div>
+      <p class="eyebrow">UX Designer &amp; Researcher</p>
+      <h1>Hi, I'm Catherine.</h1>
+      <p class="lead">I blend <strong>cognitive science</strong> with design to make complex,
+      high-stakes software — like clinical systems — genuinely usable.</p>
+      <a class="btn btn-primary" href="#work">View Work</a>
+    </div>
+    <div class="hero-photo">
+      <img src="images/landing_me3.png" alt="Catherine Gu">
+    </div>
+  </header>
 
-  <footer id="footer">
+  <!-- Work -->
+  <section class="section" id="work">
+    <div class="section-head">
+      <span class="eyebrow">Selected Work</span>
+      <h2>Case studies</h2>
+    </div>
+    <div class="work-grid">
 
-    <!-- Add font social media icons -->
-    <a href="https://www.facebook.com/catherine.gu.37201" target="_blank" class="fa fa-facebook"></a>
-    <a href="https://www.instagram.com/catherine_gu_/" target="_blank" class="fa fa-instagram"></a>
-    <a href="https://www.linkedin.com/in/catherine-gu-3091ba25a/" target="_blank" class="fa fa-linkedin"></a>
+      <a class="card" href="LinkedIn.html">
+        <div class="card-media"><img src="images/LinkedIn/LinkedIn-cover.png" alt="LinkedIn case study cover"></div>
+        <div class="card-body">
+          <p class="kicker">UX Research · Redesign</p>
+          <h3>LinkedIn Case Study</h3>
+          <p>Evaluating and redesigning LinkedIn's job-application flow for a more intuitive experience.</p>
+          <span class="read">Read case study →</span>
+        </div>
+      </a>
 
+      <a class="card" href="Kinoyume.html">
+        <div class="card-media"><img src="images/Kinoyume_home.png" alt="Kinoyume redesign cover"></div>
+        <div class="card-body">
+          <p class="kicker">Web Redesign</p>
+          <h3>Kinoyume Website Redesign</h3>
+          <p>Redesigning Kinoyume's mobile and desktop site to improve navigation and flow.</p>
+          <span class="read">Read case study →</span>
+        </div>
+      </a>
+
+      <a class="card" href="sink.html">
+        <div class="card-media"><img src="images/sink_prototype.png" alt="UCSD Sanitation project cover"></div>
+        <div class="card-body">
+          <p class="kicker">Design Research</p>
+          <h3>UCSD Sanitation</h3>
+          <p>A study into addressing collective hygiene in densely-populated areas at UCSD.</p>
+          <span class="read">Read case study →</span>
+        </div>
+      </a>
+
+      <a class="card" href="bijoux.html">
+        <div class="card-media"><img src="images/bijoux-logo.png" alt="Bijoux startup concept cover"></div>
+        <div class="card-body">
+          <p class="kicker">Product Concept</p>
+          <h3>Bijoux Startup Concept</h3>
+          <p>Developing a business concept balancing feasibility, viability, and desirability.</p>
+          <span class="read">Read case study →</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="socials">
+      <a href="https://www.facebook.com/catherine.gu.37201" target="_blank" aria-label="Facebook" class="fa fa-facebook"></a>
+      <a href="https://www.instagram.com/catherine_gu_/" target="_blank" aria-label="Instagram" class="fa fa-instagram"></a>
+      <a href="https://www.linkedin.com/in/catherine-gu-3091ba25a/" target="_blank" aria-label="LinkedIn" class="fa fa-linkedin"></a>
+    </div>
     <p>Copyright 2023 Catherine Gu</p>
-
-    <!-- Version switcher: discreet, lets visitors view older versions of the portfolio.
-         Options are filled in automatically from js/versions.js -->
+    <!-- Discreet version switcher (options filled from js/versions.js) -->
     <p class="version-switcher">
       <label for="versionSelect">Viewing</label>
       <select id="versionSelect" class="version-select" aria-label="Portfolio version"></select>
     </p>
   </footer>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  <!-- Version switcher (shared from the site root; versions.js loads first) -->
+  <!-- Version switcher scripts (shared from the site root) -->
   <script src="/COGSPortfolio/js/versions.js"></script>
   <script src="/COGSPortfolio/js/version-switcher.js"></script>
 </body>
-
 </html>
