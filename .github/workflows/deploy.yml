@@ -28,7 +28,7 @@ jobs:
           mkdir -p _site
           # Current version = the files on main now.
           # Skip git/workflow folders and the local-only v1.0.html backup.
-          rsync -a --exclude='.git' --exclude='.github' --exclude='v1.0.html' ./ _site/
+          rsync -a --exclude='.git' --exclude='.github' --exclude='archive' --exclude='docs' ./ _site/
           # Older versions: pull each git tag into a matching subfolder.
           # ---- EDIT THIS LINE to choose which versions get published ----
           for tag in v1.0; do

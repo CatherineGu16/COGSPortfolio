@@ -1,20 +1,32 @@
 /* version-switcher.css
-   Styling for the version dropdown. Loaded from the site root by every
-   version, so the switcher looks the same everywhere. */
+   Discreet version switcher, shown in the footer. Loaded from the site root
+   by every version, so the switcher looks the same everywhere. */
 
 .version-switcher {
-  display: flex;
+  margin-top: 0.6rem;
+  display: inline-flex;
   align-items: center;
-  margin-left: 1rem;
+  gap: 0.45em;
+  font-size: 0.8rem;
+  color: #8a8a8a;            /* muted label */
+}
+
+.version-switcher label {
+  margin: 0;
+  letter-spacing: 0.02em;
 }
 
 .version-select {
   font-family: 'Roboto', sans-serif;
-  font-size: 0.9rem;
-  padding: 0.3em 0.6em;
-  border: 1px solid #3ba6eb;
-  border-radius: 1em;
-  background-color: #fff;
-  color: #2c2c2c;
+  font-size: 0.8rem;
+  color: #6a6a6a;
+  padding: 0.2em 0.55em;
+  border: 1px solid #d8d8d8;   /* subtle grey, not a bold accent */
+  border-radius: 0.8em;
+  background-color: transparent;
   cursor: pointer;
+}
+
+.version-select:hover {
+  border-color: #3ba6eb;       /* faint accent only on hover */
 }

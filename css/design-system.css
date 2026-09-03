@@ -1,0 +1,60 @@
+/* design-system.css — a self-contained showcase of the v2.0 design system.
+   EVERY rule is scoped under .ds-showcase so it can live inside the existing
+   (Bootstrap-based) AboutMe page without affecting anything else on that page.
+   Requires: tokens.css (for the CSS variables) + the Fraunces/Inter fonts. */
+
+.ds-showcase {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-body);
+  padding: var(--space-7) var(--space-4);
+  border-top: 1px solid var(--color-hairline);
+}
+.ds-showcase .ds-inner { max-width: var(--container); margin-inline: auto; }
+
+.ds-showcase h2, .ds-showcase h3 {
+  font-family: var(--font-heading);
+  line-height: var(--leading-heading);
+  color: var(--color-ink);
+  font-weight: 600;
+}
+.ds-showcase h2 { font-size: var(--text-2xl); margin-bottom: var(--space-2); }
+.ds-showcase p { max-width: var(--measure); }
+.ds-showcase .ds-sub { color: var(--color-slate); }
+.ds-showcase a { color: var(--color-teal-deep); text-decoration: underline; text-underline-offset: 2px; }
+.ds-showcase a:hover { color: var(--color-teal); }
+
+.ds-showcase .ds-label {
+  font-size: var(--text-xs); letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--color-slate); margin: var(--space-6) 0 var(--space-3);
+}
+
+/* Color swatches */
+.ds-showcase .ds-swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: var(--space-3); }
+.ds-showcase .ds-swatch { border: 1px solid var(--color-hairline); border-radius: var(--radius); overflow: hidden; background: var(--color-surface); }
+.ds-showcase .ds-chip { height: 64px; }
+.ds-showcase .ds-meta { padding: var(--space-2) var(--space-3); font-size: var(--text-xs); }
+.ds-showcase .ds-meta b { display: block; color: var(--color-ink); }
+.ds-showcase .ds-meta span { color: var(--color-slate); }
+
+/* Type scale */
+.ds-showcase .ds-scale-row { display: flex; align-items: baseline; gap: var(--space-3); margin-bottom: var(--space-2); }
+.ds-showcase .ds-scale-row .ds-tag { width: 5ch; flex: none; color: var(--color-slate); font-size: var(--text-xs); }
+
+/* Spacing scale */
+.ds-showcase .ds-space-row { display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-2); }
+.ds-showcase .ds-space-row .ds-tag { width: 11ch; flex: none; color: var(--color-slate); font-size: var(--text-xs); }
+.ds-showcase .ds-space-bar { background: var(--color-teal); height: 14px; border-radius: 3px; }
+
+/* Sample components */
+.ds-showcase .ds-btn { display: inline-block; font-family: var(--font-body); font-weight: 500; font-size: var(--text-base);
+  padding: var(--space-2) var(--space-4); border-radius: 999px; text-decoration: none; cursor: pointer; border: 1px solid transparent; }
+.ds-showcase .ds-btn-primary { background: var(--color-teal); color: #fff; }
+.ds-showcase .ds-btn-primary:hover { background: var(--color-teal-deep); color: #fff; }
+.ds-showcase .ds-btn-secondary { background: transparent; color: var(--color-teal-deep); border-color: var(--color-hairline); }
+.ds-showcase .ds-btn-secondary:hover { border-color: var(--color-teal); }
+.ds-showcase .ds-card { background: var(--color-surface); border: 1px solid var(--color-hairline); border-radius: var(--radius);
+  box-shadow: var(--shadow); padding: var(--space-4); max-width: 320px; }
+.ds-showcase .ds-kicker { color: var(--color-slate); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.06em; }

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>v2.0 Design System — Catherine Gu</title>
+  <!-- Typefaces: Fraunces (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Design system -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <style>
+    /* Page-local styles for the style guide only */
+    .sg-section { padding: var(--space-6) 0; border-bottom: 1px solid var(--color-hairline); }
+    .sg-label { font-size: var(--text-xs); letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-slate); margin-bottom: var(--space-3); }
+    .swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: var(--space-3); }
+    .swatch { border: 1px solid var(--color-hairline); border-radius: var(--radius); overflow: hidden; }
+    .swatch .chip { height: 72px; }
+    .swatch .meta { padding: var(--space-2) var(--space-3); font-size: var(--text-xs); }
+    .swatch .meta b { display: block; color: var(--color-ink); }
+    .swatch .meta span { color: var(--color-slate); }
+    .scale-row { display: flex; align-items: baseline; gap: var(--space-3); margin-bottom: var(--space-2); }
+    .scale-row .tag { width: 5ch; flex: none; color: var(--color-slate); font-size: var(--text-xs); }
+    .space-bar { background: var(--color-teal); height: 14px; border-radius: 3px; }
+    .space-row { display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-2); }
+    .space-row .tag { width: 10ch; flex: none; color: var(--color-slate); font-size: var(--text-xs); }
+    /* Sample components */
+    .btn { display: inline-block; font-family: var(--font-body); font-weight: 500; font-size: var(--text-base);
+           padding: var(--space-2) var(--space-4); border-radius: 999px; text-decoration: none; cursor: pointer; border: 1px solid transparent; }
+    .btn-primary { background: var(--color-teal); color: #fff; }
+    .btn-primary:hover { background: var(--color-teal-deep); color: #fff; }
+    .btn-secondary { background: transparent; color: var(--color-teal-deep); border-color: var(--color-hairline); }
+    .btn-secondary:hover { border-color: var(--color-teal); }
+    .card { background: var(--color-surface); border: 1px solid var(--color-hairline); border-radius: var(--radius);
+            box-shadow: var(--shadow); padding: var(--space-4); max-width: 320px; }
+    .card .kicker { color: var(--color-slate); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.06em; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="sg-section">
+      <p class="sg-label">Catherine Gu — Portfolio v2.0</p>
+      <h1>Design System</h1>
+      <p class="text-muted">"Ink &amp; Teal" — calm, research-and-healthcare appropriate, distinct from the default blue. Everything below is driven by <code>css/tokens.css</code>.</p>
+    </header>
+
+    <!-- COLOR -->
+    <section class="sg-section">
+      <p class="sg-label">Color</p>
+      <div class="swatches">
+        <div class="swatch"><div class="chip" style="background:var(--color-ink)"></div><div class="meta"><b>Ink</b><span>#1A2B33 · text</span></div></div>
+        <div class="swatch"><div class="chip" style="background:var(--color-slate)"></div><div class="meta"><b>Slate</b><span>#5B6B72 · muted</span></div></div>
+        <div class="swatch"><div class="chip" style="background:var(--color-paper)"></div><div class="meta"><b>Paper</b><span>#FBFAF7 · bg</span></div></div>
+        <div class="swatch"><div class="chip" style="background:var(--color-surface); border-bottom:1px solid var(--color-hairline)"></div><div class="meta"><b>Surface</b><span>#FFFFFF · cards</span></div></div>
+        <div class="swatch"><div class="chip" style="background:var(--color-hairline)"></div><div class="meta"><b>Hairline</b><span>#E6E3DD · borders</span></div></div>
+        <div class="swatch"><div class="chip" style="background:var(--color-teal)"></div><div class="meta"><b>Teal</b><span>#0E7C86 · accent</span></div></div>
+        <div class="swatch"><div class="chip" style="background:var(--color-teal-deep)"></div><div class="meta"><b>Deep Teal</b><span>#0A5C64 · links</span></div></div>
+        <div class="swatch"><div class="chip" style="background:var(--color-coral)"></div><div class="meta"><b>Coral</b><span>#E86A5C · highlight</span></div></div>
+      </div>
+    </section>
+
+    <!-- TYPE -->
+    <section class="sg-section">
+      <p class="sg-label">Typography — Fraunces (headings) + Inter (body)</p>
+      <div class="scale-row"><span class="tag">3xl</span><span style="font-family:var(--font-heading); font-size:var(--text-3xl)">Hi, I'm Catherine</span></div>
+      <div class="scale-row"><span class="tag">2xl</span><span style="font-family:var(--font-heading); font-size:var(--text-2xl)">Selected Work</span></div>
+      <div class="scale-row"><span class="tag">xl</span><span style="font-family:var(--font-heading); font-size:var(--text-xl)">Case study title</span></div>
+      <div class="scale-row"><span class="tag">lg</span><span style="font-size:var(--text-lg)">A larger lead paragraph in Inter.</span></div>
+      <div class="scale-row"><span class="tag">base</span><span style="font-size:var(--text-base)">Body text — the quick brown fox jumps over the lazy dog.</span></div>
+      <div class="scale-row"><span class="tag">xs</span><span class="text-muted">Captions and metadata, muted slate.</span></div>
+    </section>
+
+    <!-- SPACING -->
+    <section class="sg-section">
+      <p class="sg-label">Spacing scale (8px base)</p>
+      <div class="space-row"><span class="tag">space-1 · 4</span><div class="space-bar" style="width:var(--space-1)"></div></div>
+      <div class="space-row"><span class="tag">space-2 · 8</span><div class="space-bar" style="width:var(--space-2)"></div></div>
+      <div class="space-row"><span class="tag">space-3 · 16</span><div class="space-bar" style="width:var(--space-3)"></div></div>
+      <div class="space-row"><span class="tag">space-4 · 24</span><div class="space-bar" style="width:var(--space-4)"></div></div>
+      <div class="space-row"><span class="tag">space-5 · 32</span><div class="space-bar" style="width:var(--space-5)"></div></div>
+      <div class="space-row"><span class="tag">space-6 · 48</span><div class="space-bar" style="width:var(--space-6)"></div></div>
+      <div class="space-row"><span class="tag">space-7 · 64</span><div class="space-bar" style="width:var(--space-7)"></div></div>
+      <div class="space-row"><span class="tag">space-8 · 96</span><div class="space-bar" style="width:var(--space-8)"></div></div>
+    </section>
+
+    <!-- COMPONENTS -->
+    <section class="sg-section">
+      <p class="sg-label">Sample components</p>
+      <p style="margin-bottom:var(--space-4)">
+        <a class="btn btn-primary" href="#">View Work</a>
+        &nbsp;
+        <a class="btn btn-secondary" href="#">Resume</a>
+      </p>
+      <div class="card">
+        <p class="kicker">Case study</p>
+        <h3 style="margin:var(--space-1) 0 var(--space-2)">LinkedIn redesign</h3>
+        <p style="font-size:var(--text-base)">Cut the job-application flow by 40% with a clearer, calmer path.</p>
+        <p style="margin-top:var(--space-3)"><a href="#">Read case study →</a></p>
+      </div>
+    </section>
+
+    <footer class="sg-section" style="border-bottom:none">
+      <p class="text-muted">Style guide — not a published page. Font pairing is a proposal; swap in <code>css/tokens.css</code> + the &lt;link&gt; above.</p>
+    </footer>
+  </div>
+</body>
+</html>

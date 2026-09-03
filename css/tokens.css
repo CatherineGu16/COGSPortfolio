@@ -1,0 +1,48 @@
+/* tokens.css — the single source of design values for v2.0.
+   Load this FIRST, everywhere. Change a value here and the whole site follows.
+   See docs/DESIGN-NOTES.md for the reasoning behind these choices. */
+
+:root {
+  /* ---- Color: "Ink & Teal" (DESIGN-NOTES §6) ---- */
+  --color-ink:       #1A2B33;  /* body + headings */
+  --color-slate:     #5B6B72;  /* muted / secondary text */
+  --color-paper:     #FBFAF7;  /* page background (warm off-white) */
+  --color-surface:   #FFFFFF;  /* cards, panels */
+  --color-hairline:  #E6E3DD;  /* borders, dividers */
+  --color-teal:      #0E7C86;  /* accent, primary CTA */
+  --color-teal-deep: #0A5C64;  /* small-text links (AA-safe) */
+  --color-coral:     #E86A5C;  /* rare highlight — use sparingly */
+
+  /* ---- Typography ---- */
+  --font-heading: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body:    "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+
+  /* Type scale (rem @ 16px root): 14 / 16 / 20 / 24 / 32 / 48 */
+  --text-xs:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.25rem;
+  --text-xl:   1.5rem;
+  --text-2xl:  2rem;
+  --text-3xl:  3rem;
+
+  --leading-body:    1.6;
+  --leading-heading: 1.15;
+
+  /* ---- Spacing (8px base): 4 / 8 / 16 / 24 / 32 / 48 / 64 / 96 ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+  --space-7: 4rem;
+  --space-8: 6rem;
+
+  /* ---- Radius & shadow ---- */
+  --radius:  14px;
+  --shadow:  0 10px 30px rgba(26, 43, 51, 0.08);
+
+  /* ---- Layout widths ---- */
+  --container: 1100px;  /* overall layout max width */
+  --measure:   72ch;    /* readable text column */
+}

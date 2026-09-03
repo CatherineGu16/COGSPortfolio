@@ -47,11 +47,6 @@
         <li class="navbar-item">
           <a href="AboutMe.html" class="nav-link">About Me</a>
         </li>
-        <!-- Version switcher: flip between saved versions of the portfolio -->
-        <li class="navbar-item version-switcher">
-          <!-- Options are filled in automatically from js/versions.js -->
-          <select id="versionSelect" class="version-select" aria-label="Portfolio version"></select>
-        </li>
       </ul>
     </div>
   </nav>
@@ -71,6 +66,13 @@
     <a href="https://www.linkedin.com/in/catherine-gu-3091ba25a/" target="_blank" class="fa fa-linkedin"></a>
 
     <p>Copyright 2023 Catherine Gu</p>
+
+    <!-- Version switcher: discreet, lets visitors view older versions of the portfolio.
+         Options are filled in automatically from js/versions.js -->
+    <p class="version-switcher">
+      <label for="versionSelect">Viewing</label>
+      <select id="versionSelect" class="version-select" aria-label="Portfolio version"></select>
+    </p>
   </footer>
 
   <!-- Optional JavaScript -->
