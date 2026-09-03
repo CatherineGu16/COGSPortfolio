@@ -1,158 +1,119 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Google Fonts -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="About Catherine Gu — UX designer & researcher.">
+  <title>About — Catherine Gu</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300&family=Quattrocento&family=Roboto&display=swap" rel="stylesheet">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <!-- link to style.css -->
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/aboutme.css">
-  <link rel="stylesheet" href="css/casestudy.css">
-  <!-- v2.0 design-system showcase: fonts + tokens + scoped styles -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
   <link rel="stylesheet" href="css/design-system.css">
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/86badc98c7.js" crossorigin="anonymous"></script>
-
+  <link rel="stylesheet" href="/COGSPortfolio/css/version-switcher.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
-  <title>Catherine Gu</title>
 </head>
-
 <body>
-  <!-- Nav Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="index.html"><img src="images/catherinegu.png" alt="logo" height="50"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav ml-auto">
-        <li class="navbar-item">
-          <a href="files\CatherineGuResume.pdf" class="nav-link" target="_blank">Resume</a>
-        </li>
-        <li class="navbar-item">
-          <a href="index.html#projects" class="nav-link">Work</a>
-        </li>
-        <li class="navbar-item">
-          <a href="AboutMe.html" class="nav-link">About Me</a>
-        </li>
-      </ul>
-    </div>
+
+  <nav class="site-nav">
+    <a class="brand" href="index.html"><img src="images/catherinegu.png" alt="Catherine Gu" height="44"></a>
+    <ul class="nav-links">
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="AboutMe.html">About</a></li>
+      <li><a href="files/CatherineGuResume.pdf" target="_blank">Resume</a></li>
+    </ul>
   </nav>
 
-  <!-- About Me -->
-  <section id="aboutme">
-    <h2 class="aboutme-header">ABOUT ME</h2><br><br>
-    
-      <div class="row">
-        <div class="col-lg-6 col-md-6"><img src="images\AboutMePic.jpg" height="600px">
-        </div>
-        <div class="about-body col-lg-6 col-md-6">
-        <h3 class="about-greeting"><b>Hey, I'm Catherine!</b></h3> <br>
-        Welcome to my portfolio!
-          I am a designer based in San Diego, California and am currently 
-          pursuing a master's in Human Computer Interaction at UCI.
-          <br>
-          <br>
-          My design journey started a few quarters into my first
-          year as an undergraduate at UCSD and I have learned so much through my courses
-          and projects. Through the experiences I have gained, I have found the most
-          interest in UX/UI design work and user research.
-          I hope to be able to reach more people with my designs and 
-          utilize my skills to develop innovative solutions.
-            <br><br>
-            <a class="btn btn-primary btn-lg" target="_blank" href="files\CatherineGuResume.pdf"
-            role="button">Resume</a>
-            <br>
-            
-            <br>
-          <h3 class="about-fun">
-            In my free time I like to dabble in all kinds of sports such as tennis,
-            basketball, ultimate frisbee, hiking, and more. When I'm not outdoors,
-            I enjoy baking, painting, playing the violin, and I have recently picked up
-            pottery.
-          </h3> <br>
-        </div>
+  <!-- About intro -->
+  <header class="hero">
+    <div>
+      <p class="eyebrow">About</p>
+      <h1>Hey, I'm Catherine!</h1>
+      <p>Welcome to my portfolio! I'm a designer based in San Diego, California, with a master's in
+        Human-Computer Interaction &amp; Design from UCI and a background in Cognitive Science from UCSD.</p>
+      <p>My design journey started a few quarters into my first year as an undergraduate at UCSD, and I've
+        learned so much through my courses and projects. Through those experiences I've found the most
+        interest in UX/UI design and user research. I hope to reach more people with my designs and use my
+        skills to develop innovative solutions.</p>
+      <p style="margin-top:var(--space-4)"><a class="btn btn-primary" href="files/CatherineGuResume.pdf" target="_blank">Resume</a></p>
+    </div>
+    <div class="hero-photo">
+      <img src="images/AboutMePic.jpg" alt="Catherine Gu">
+    </div>
+  </header>
+
+  <!-- Beyond work -->
+  <section class="section" style="padding-top:0">
+    <div class="section-head"><span class="eyebrow">Beyond the screen</span></div>
+    <p>In my free time I like to dabble in all kinds of sports — tennis, basketball, ultimate frisbee,
+      hiking, and more. When I'm not outdoors, I enjoy baking, painting, playing the violin, and I've
+      recently picked up pottery.</p>
+  </section>
+
+  <!-- ===== v2.0 Design System (kept as a reference/showcase) ===== -->
+  <section class="ds-showcase">
+    <div class="ds-inner">
+      <p class="ds-label" style="margin-top:0">Portfolio v2.0</p>
+      <h2>Design System</h2>
+      <p class="ds-sub">"Ink &amp; Teal" — the color, type, and spacing system behind the v2.0 redesign. Everything here is driven by <code>css/tokens.css</code>.</p>
+
+      <p class="ds-label">Color</p>
+      <div class="ds-swatches">
+        <div class="ds-swatch"><div class="ds-chip" style="background:var(--color-ink)"></div><div class="ds-meta"><b>Ink</b><span>#1A2B33 · text</span></div></div>
+        <div class="ds-swatch"><div class="ds-chip" style="background:var(--color-slate)"></div><div class="ds-meta"><b>Slate</b><span>#5B6B72 · muted</span></div></div>
+        <div class="ds-swatch"><div class="ds-chip" style="background:var(--color-paper)"></div><div class="ds-meta"><b>Paper</b><span>#FBFAF7 · bg</span></div></div>
+        <div class="ds-swatch"><div class="ds-chip" style="background:var(--color-surface); border-bottom:1px solid var(--color-hairline)"></div><div class="ds-meta"><b>Surface</b><span>#FFFFFF · cards</span></div></div>
+        <div class="ds-swatch"><div class="ds-chip" style="background:var(--color-hairline)"></div><div class="ds-meta"><b>Hairline</b><span>#E6E3DD · borders</span></div></div>
+        <div class="ds-swatch"><div class="ds-chip" style="background:var(--color-teal)"></div><div class="ds-meta"><b>Teal</b><span>#0E7C86 · accent</span></div></div>
+        <div class="ds-swatch"><div class="ds-chip" style="background:var(--color-teal-deep)"></div><div class="ds-meta"><b>Deep Teal</b><span>#0A5C64 · links</span></div></div>
+        <div class="ds-swatch"><div class="ds-chip" style="background:var(--color-coral)"></div><div class="ds-meta"><b>Coral</b><span>#E86A5C · highlight</span></div></div>
       </div>
 
+      <p class="ds-label">Typography — Fraunces (headings) + Inter (body)</p>
+      <div class="ds-scale-row"><span class="ds-tag">3xl</span><span style="font-family:var(--font-heading); font-size:var(--text-3xl)">Hi, I'm Catherine</span></div>
+      <div class="ds-scale-row"><span class="ds-tag">2xl</span><span style="font-family:var(--font-heading); font-size:var(--text-2xl)">Selected Work</span></div>
+      <div class="ds-scale-row"><span class="ds-tag">xl</span><span style="font-family:var(--font-heading); font-size:var(--text-xl)">Case study title</span></div>
+      <div class="ds-scale-row"><span class="ds-tag">base</span><span style="font-size:var(--text-base)">Body text — the quick brown fox jumps over the lazy dog.</span></div>
 
-    </section>
+      <p class="ds-label">Spacing scale (8px base)</p>
+      <div class="ds-space-row"><span class="ds-tag">space-2 · 8</span><div class="ds-space-bar" style="width:var(--space-2)"></div></div>
+      <div class="ds-space-row"><span class="ds-tag">space-4 · 24</span><div class="ds-space-bar" style="width:var(--space-4)"></div></div>
+      <div class="ds-space-row"><span class="ds-tag">space-6 · 48</span><div class="ds-space-bar" style="width:var(--space-6)"></div></div>
+      <div class="ds-space-row"><span class="ds-tag">space-8 · 96</span><div class="ds-space-bar" style="width:var(--space-8)"></div></div>
 
-    <!-- ===== v2.0 Design System (kept as a reference/showcase) ===== -->
-    <section class="ds-showcase">
-      <div class="ds-inner">
-        <p class="ds-label" style="margin-top:0">Portfolio v2.0</p>
-        <h2>Design System</h2>
-        <p class="ds-sub">"Ink &amp; Teal" — the color, type, and spacing system behind the v2.0 redesign. Everything here is driven by <code>css/tokens.css</code>.</p>
-
-        <p class="ds-label">Color</p>
-        <div class="ds-swatches">
-          <div class="ds-swatch"><div class="ds-chip" style="background:var(--color-ink)"></div><div class="ds-meta"><b>Ink</b><span>#1A2B33 · text</span></div></div>
-          <div class="ds-swatch"><div class="ds-chip" style="background:var(--color-slate)"></div><div class="ds-meta"><b>Slate</b><span>#5B6B72 · muted</span></div></div>
-          <div class="ds-swatch"><div class="ds-chip" style="background:var(--color-paper)"></div><div class="ds-meta"><b>Paper</b><span>#FBFAF7 · bg</span></div></div>
-          <div class="ds-swatch"><div class="ds-chip" style="background:var(--color-surface); border-bottom:1px solid var(--color-hairline)"></div><div class="ds-meta"><b>Surface</b><span>#FFFFFF · cards</span></div></div>
-          <div class="ds-swatch"><div class="ds-chip" style="background:var(--color-hairline)"></div><div class="ds-meta"><b>Hairline</b><span>#E6E3DD · borders</span></div></div>
-          <div class="ds-swatch"><div class="ds-chip" style="background:var(--color-teal)"></div><div class="ds-meta"><b>Teal</b><span>#0E7C86 · accent</span></div></div>
-          <div class="ds-swatch"><div class="ds-chip" style="background:var(--color-teal-deep)"></div><div class="ds-meta"><b>Deep Teal</b><span>#0A5C64 · links</span></div></div>
-          <div class="ds-swatch"><div class="ds-chip" style="background:var(--color-coral)"></div><div class="ds-meta"><b>Coral</b><span>#E86A5C · highlight</span></div></div>
-        </div>
-
-        <p class="ds-label">Typography — Fraunces (headings) + Inter (body)</p>
-        <div class="ds-scale-row"><span class="ds-tag">3xl</span><span style="font-family:var(--font-heading); font-size:var(--text-3xl)">Hi, I'm Catherine</span></div>
-        <div class="ds-scale-row"><span class="ds-tag">2xl</span><span style="font-family:var(--font-heading); font-size:var(--text-2xl)">Selected Work</span></div>
-        <div class="ds-scale-row"><span class="ds-tag">xl</span><span style="font-family:var(--font-heading); font-size:var(--text-xl)">Case study title</span></div>
-        <div class="ds-scale-row"><span class="ds-tag">lg</span><span style="font-size:var(--text-lg)">A larger lead paragraph in Inter.</span></div>
-        <div class="ds-scale-row"><span class="ds-tag">base</span><span style="font-size:var(--text-base)">Body text — the quick brown fox jumps over the lazy dog.</span></div>
-        <div class="ds-scale-row"><span class="ds-tag">xs</span><span class="ds-sub" style="font-size:var(--text-xs)">Captions and metadata, muted slate.</span></div>
-
-        <p class="ds-label">Spacing scale (8px base)</p>
-        <div class="ds-space-row"><span class="ds-tag">space-1 · 4</span><div class="ds-space-bar" style="width:var(--space-1)"></div></div>
-        <div class="ds-space-row"><span class="ds-tag">space-2 · 8</span><div class="ds-space-bar" style="width:var(--space-2)"></div></div>
-        <div class="ds-space-row"><span class="ds-tag">space-3 · 16</span><div class="ds-space-bar" style="width:var(--space-3)"></div></div>
-        <div class="ds-space-row"><span class="ds-tag">space-4 · 24</span><div class="ds-space-bar" style="width:var(--space-4)"></div></div>
-        <div class="ds-space-row"><span class="ds-tag">space-5 · 32</span><div class="ds-space-bar" style="width:var(--space-5)"></div></div>
-        <div class="ds-space-row"><span class="ds-tag">space-6 · 48</span><div class="ds-space-bar" style="width:var(--space-6)"></div></div>
-        <div class="ds-space-row"><span class="ds-tag">space-7 · 64</span><div class="ds-space-bar" style="width:var(--space-7)"></div></div>
-        <div class="ds-space-row"><span class="ds-tag">space-8 · 96</span><div class="ds-space-bar" style="width:var(--space-8)"></div></div>
-
-        <p class="ds-label">Sample components</p>
-        <p style="margin-bottom:var(--space-4)">
-          <a class="ds-btn ds-btn-primary" href="#">View Work</a>
-          &nbsp;
-          <a class="ds-btn ds-btn-secondary" href="#">Resume</a>
-        </p>
-        <div class="ds-card">
-          <p class="ds-kicker">Case study</p>
-          <h3 style="margin:var(--space-1) 0 var(--space-2)">LinkedIn redesign</h3>
-          <p style="font-size:var(--text-base)">Cut the job-application flow by 40% with a clearer, calmer path.</p>
-          <p style="margin-top:var(--space-3)"><a href="#">Read case study →</a></p>
-        </div>
+      <p class="ds-label">Sample components</p>
+      <p style="margin-bottom:var(--space-4)">
+        <a class="ds-btn ds-btn-primary" href="#">View Work</a> &nbsp;
+        <a class="ds-btn ds-btn-secondary" href="#">Resume</a>
+      </p>
+      <div class="ds-card">
+        <p class="ds-kicker">Case study</p>
+        <h3 style="margin:var(--space-1) 0 var(--space-2)">LinkedIn redesign</h3>
+        <p style="font-size:var(--text-base)">Evaluating and redesigning LinkedIn's job-application flow.</p>
+        <p style="margin-top:var(--space-3)"><a href="LinkedIn.html">Read case study →</a></p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer id="footer">
-      <!-- Add font awesome icons -->
-      <a href="https://www.facebook.com/catherine.gu.37201" target="_blank" class="fa fa-facebook"></a>
-      <a href="https://www.instagram.com/catherine_gu_/" target="_blank" class="fa fa-instagram"></a>
-      <a href="https://www.linkedin.com/in/catherine-gu-3091ba25a/" target="_blank" class="fa fa-linkedin"></a>
-  
-      <p>Copyright 2023 Catherine Gu</p>
-    </footer>
-    
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="socials">
+      <a href="https://www.facebook.com/catherine.gu.37201" target="_blank" aria-label="Facebook" class="fa fa-facebook"></a>
+      <a href="https://www.instagram.com/catherine_gu_/" target="_blank" aria-label="Instagram" class="fa fa-instagram"></a>
+      <a href="https://www.linkedin.com/in/catherine-gu-3091ba25a/" target="_blank" aria-label="LinkedIn" class="fa fa-linkedin"></a>
+    </div>
+    <p>Copyright 2023 Catherine Gu</p>
+    <p class="version-switcher">
+      <label for="versionSelect">Viewing</label>
+      <select id="versionSelect" class="version-select" aria-label="Portfolio version"></select>
+    </p>
+  </footer>
+
+  <script src="/COGSPortfolio/js/versions.js"></script>
+  <script src="/COGSPortfolio/js/version-switcher.js"></script>
 </body>
-
 </html>
