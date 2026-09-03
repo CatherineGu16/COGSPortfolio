@@ -1,0 +1,53 @@
+name: Publish portfolio
+
+# Run when the main branch changes, or when you click "Run workflow" in the Actions tab.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Permissions the workflow needs to publish to GitHub Pages.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Get the repo WITH full history, so we can read old version tags.
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Assemble the site: current version at the root, each old version in its own folder.
+      - name: Assemble versions
+        run: |
+          mkdir -p _site
+          # Current version = the files on main now.
+          # Skip git/workflow folders and the local-only v1.0.html backup.
+          rsync -a --exclude='.git' --exclude='.github' --exclude='v1.0.html' ./ _site/
+          # Older versions: pull each git tag into a matching subfolder.
+          # ---- EDIT THIS LINE to choose which versions get published ----
+          for tag in v1.0; do
+            mkdir -p "_site/$tag"
+            git archive "$tag" | tar -x -C "_site/$tag"
+          done
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
